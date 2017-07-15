@@ -1,4 +1,6 @@
 apply plugin: 'com.android.library'
+apply plugin: 'com.novoda.bintray-release'
+
 
 android {
     compileSdkVersion 26
@@ -23,4 +25,13 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
+}
+
+publish {
+    groupId = 'com.github.armcha'
+    artifactId = 'Logger'
+    publishVersion = '2.0.0'
+    desc = 'Simple logger'
+    licences = ['MIT']
+    website = 'https://github.com/armcha/logger'
 }
