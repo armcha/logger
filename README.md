@@ -4,6 +4,14 @@ Logger is simple library, which will help you to find your logs easily.
 
 ![](files/demo.gif)
 
+#Download
+-----------------------
+
+Gradle:
+```groovy
+compile 'com.github.armcha:Logger:2.0.0'
+```
+
 # Setup and usage
 -----------------------
 ## Step 1:
