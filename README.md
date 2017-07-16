@@ -4,7 +4,7 @@ Logger is simple library, which will help you to find your logs easily.
 
 ![](files/demo.gif)
 
-#Download
+# Download
 -----------------------
 
 Gradle:
