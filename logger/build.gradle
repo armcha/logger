@@ -7,7 +7,7 @@ android {
     buildToolsVersion "26.0.0"
 
     defaultConfig {
-        minSdkVersion 16
+        minSdkVersion 14
         targetSdkVersion 26
         versionCode 1
         versionName "1.0"
@@ -30,7 +30,7 @@ dependencies {
 publish {
     groupId = 'com.github.armcha'
     artifactId = 'Logger'
-    publishVersion = '2.0.0'
+    publishVersion = '2.1.0'
     desc = 'Simple logger'
     licences = ['MIT']
     website = 'https://github.com/armcha/logger'

@@ -1,2 +1,1 @@
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.luseen.logger" />
+<manifest package="com.luseen.logger" />
