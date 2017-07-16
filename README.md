@@ -9,7 +9,7 @@ Logger is simple library, which will help you to find your logs easily.
 
 Gradle:
 ```groovy
-compile 'com.github.armcha:Logger:2.0.0'
+compile 'com.github.armcha:Logger:2.1.0'
 ```
 
 # Setup and usage
