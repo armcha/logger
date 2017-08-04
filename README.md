@@ -9,7 +9,7 @@ Logger is simple library, which will help you to find your logs easily.
 
 Gradle:
 ```groovy
-compile 'com.github.armcha:Logger:2.0.0'
+compile 'com.github.armcha:Logger:2.2.0'
 ```
 
 # Setup and usage
@@ -26,6 +26,7 @@ Init logger in Application onCreate method
                 .isLoggable(BuildConfig.DEBUG)
                 .logType(LogType.WARN)
                 .tag("MyTag")
+                .setIsKotlin(true)
                 .build();
     }
 ```
@@ -49,6 +50,13 @@ Init logger in Application onCreate method
  tag("MyTag")
  ```
  Default log tag
+
+ -----------------------
+  ```java
+  setIsKotlin(boolean)
+  ```
+   - set true when use kotlin
+ -----------------------
 
 
 ## Step 2:

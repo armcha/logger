@@ -30,7 +30,7 @@ dependencies {
 publish {
     groupId = 'com.github.armcha'
     artifactId = 'Logger'
-    publishVersion = '2.1.0'
+    publishVersion = '2.2.0'
     desc = 'Simple logger'
     licences = ['MIT']
     website = 'https://github.com/armcha/logger'

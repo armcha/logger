@@ -10,12 +10,14 @@ public class Logger {
 
     private static LogType logType = LogType.INFO;
     private static boolean isLoggable = true;
+    private static boolean isKotlin = false;
     private static String TAG = "Logger";
 
     private static void init(Builder builder) {
         Logger.logType = builder.getLogType();
         Logger.TAG = builder.getTag();
         Logger.isLoggable = builder.isIsLoggable();
+        Logger.isKotlin = builder.isIsKotlin();
     }
 
     public static void e(Object message) {
@@ -83,12 +85,14 @@ public class Logger {
         String methodName = traceElement.getMethodName();
         int lineNumber = traceElement.getLineNumber();
         String logMessage = message == null ? null : message.toString();
-        return logMessage + " | (" + className + ".java:" + lineNumber + ")";
+        String postFix = isKotlin ? ".kt:" : ".java:";
+        return logMessage + " | (" + className + postFix + lineNumber + ")";
     }
 
     public static class Builder {
         private static LogType logType = LogType.INFO;
         private static boolean isLoggable = true;
+        private static boolean isKotlin = false;
         private static String tag = "Logger";
 
         public Builder logType(LogType logType) {
@@ -104,6 +108,15 @@ public class Logger {
         public Builder tag(String tag) {
             Builder.tag = tag;
             return this;
+        }
+
+        public Builder setIsKotlin(boolean isKotlin) {
+            Builder.isKotlin = isKotlin;
+            return this;
+        }
+
+        public boolean isIsKotlin() {
+            return isKotlin;
         }
 
         public void build() {

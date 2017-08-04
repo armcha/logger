@@ -19,6 +19,7 @@ public class App extends Application {
                 .isLoggable(BuildConfig.DEBUG)
                 .logType(LogType.WARN)
                 .tag("MyTag")
+                .setIsKotlin(true)
                 .build();
     }
 }
